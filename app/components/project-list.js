@@ -28,6 +28,5 @@ export default Ember.Component.extend({
         country: item.business.address.country.toUpperCase(),
       });
     });
-    console.log(this.projects);
   }
 });
