@@ -1,0 +1,57 @@
+@import 'ember-paper';
+
+body {
+  background-color: #F6F7FB;
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.project {
+  float: left;
+  width: 30%;
+  margin: 20px;
+}
+
+.texts {
+  margin: 0 0 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.discover-button {
+  width: 25%;
+  margin: 0 auto 20px;
+  color: #2D4876 !important;
+  background-color: #C4DBFA !important;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+}
+
+.yellow {
+  background-color: #F4DD7D;
+}
+
+.green {
+  background-color: #B6D86A;
+}

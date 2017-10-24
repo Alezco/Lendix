@@ -1,1 +1,22 @@
-{{yield}}
+<div class="projects">
+  {{#each projects as |project|}}
+    {{#paper-card class="project"}}
+      {{#paper-card-content}}
+        <h3>{{project.name}}</h3>
+      {{/paper-card-content}}
+      <div class="texts">
+        <span class="item">{{project.rate}}%</span>
+        <span class="item">{{project.loanDuration}} mois</span>
+        <span class="item">{{project.grade}} <span class="circle {{get-color project.grade}}"></span></span>
+        <span class="item">{{project.country}} <img src="{{project.country}}.png" class="circle"></span>
+      </div>
+      <img src="https://cdn.lendix.com/{{project.illustration.url}}">
+      <div class="texts">
+        <span class="item">{{project.amount}} €</span>
+        <span class="item">{{paper-icon icon="location_on"}} {{project.business.address.city}}</span>
+        <span class="item">{{paper-icon icon="label_outline"}} {{project.activity}}</span>
+      </div>
+      {{#paper-button class="discover-button"}}Découvrir{{/paper-button}}
+    {{/paper-card}}
+  {{/each}}
+</div>
